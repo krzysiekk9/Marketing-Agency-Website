@@ -1,0 +1,236 @@
+.preSection1 {
+  height: 20vh;
+  background-image: url(../img/preSection1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+
+  .preSection1-wrapper {
+    width: 97%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.141);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+
+    .section1-title {
+      color: #f2f2f2;
+      font-family: "Montserrat", sans-serif;
+      font-size: 3rem;
+      z-index: 15;
+    }
+  }
+}
+.section1 {
+  height: 100vh;
+  background-color: #0d0d0d;
+
+  .text-wrapper {
+    padding: 4rem 2rem 6rem 10rem;
+    color: #f2f2f2;
+    background-color: #0d0d0d;
+    width: 50vw;
+    height: 60%;
+    position: absolute;
+    margin-top: 6rem;
+    z-index: 5;
+    border-radius: 2px;
+
+    .section1-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      padding-bottom: 3rem;
+    }
+    .section1-text {
+      font-size: 2rem;
+      width: 85%;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 3rem;
+      padding-top: 6rem;
+      p {
+        padding-bottom: 3rem;
+      }
+
+      .toForm-btn {
+        color: #2c2c2c;
+        background-color: #f2f2f2;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 3px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        border-radius: 2px;
+
+        &:hover {
+          cursor: pointer;
+          scale: 0.99;
+          opacity: 0.9;
+          background-color: #c0c0c0;
+        }
+      }
+    }
+  }
+  .phone-image {
+    width: 400px;
+    padding-right: 10rem;
+  }
+  .video {
+    height: auto;
+    width: 50vw;
+    margin-left: 50%;
+    z-index: 2;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  .cover-vid {
+    background-color: #10101028;
+    background-image: url(../img/phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 50%;
+    z-index: 3;
+  }
+  .fill-div {
+    background-color: #0d0d0d;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    margin-top: 0;
+    z-index: 4;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .section1 {
+    .text-wrapper {
+      width: 47%;
+      padding: 4rem 0rem 6rem 15rem;
+      .section1-text {
+        width: 70%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .section1 {
+    .text-wrapper {
+      .section1-text {
+        font-size: 2rem;
+        padding-top: 2.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .section1 {
+    .text-wrapper {
+      .section1-text {
+        padding-top: 2.2rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section1 {
+    .text-wrapper {
+      .section1-text {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .preSection1 {
+    background-image: url(../img/preSection1-mid.jpg);
+    .preSection1-wrapper {
+      width: 92%;
+      .section1-title {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 870px) {
+  .preSection1 {
+    background-image: url(../img/preSection1-small.jpg);
+    .preSection1-wrapper {
+      width: 92%;
+      .section1-title {
+        font-size: 2rem;
+      }
+    }
+  }
+  .section1 {
+    .text-wrapper {
+      padding: 0;
+      width: 100%;
+      .section1-text {
+        font-size: 1.4rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 3rem;
+        padding-top: 1.5rem;
+        margin: auto;
+        p {
+          padding-bottom: 6rem;
+        }
+        .toForm-btn {
+          letter-spacing: 2px;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+    }
+    .fill-div {
+      width: 100vw;
+    }
+    .cover-vid {
+      background: none;
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .section1 {
+    .text-wrapper {
+      .section1-text {
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 3rem;
+        padding-top: 1.5rem;
+        margin: auto;
+        p {
+          padding-bottom: 6rem;
+        }
+        .toForm-btn {
+          letter-spacing: 2px;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+    }
+    .fill-div {
+      width: 100vw;
+    }
+    .cover-vid {
+      background: none;
+      display: none;
+    }
+  }
+}

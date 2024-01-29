@@ -1,0 +1,15 @@
+@import "./header";
+@import "./landingPage";
+@import "./whatDoWeDo";
+@import "./faq";
+@import "./sendForm";
+@import "./contact";
+@import "./thankyou";
+
+* {
+  margin: 0;
+  max-width: 100vw !important;
+}
+body {
+  height: 100vh;
+}

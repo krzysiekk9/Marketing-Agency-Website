@@ -1,0 +1,146 @@
+.landing-page {
+  height: 100vh;
+  background-image: (url(../img/landing-page.jpg));
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    z-index: 10;
+    width: 50vw;
+    background-color: rgba(56, 56, 56, 0.559);
+    margin-top: 13rem;
+    padding: 4rem 0rem 4rem 7rem;
+
+    .landing-page--title {
+      width: 100%;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    .landing-page--text {
+      color: #fff;
+      width: 90%;
+      font-family: "Montserrat", sans-serif;
+      text-align: justify;
+      font-size: 1.7rem;
+    }
+  }
+
+  .get-more {
+    padding-top: 17rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+
+    .more-btn {
+      color: #fff;
+      padding: 15px;
+      background: none;
+      font-size: 1.3rem;
+      border: none;
+      font-family: "Montserrat", sans-serif;
+      width: 200px;
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:hover {
+        animation-name: arrowMove;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        cursor: pointer;
+      }
+    }
+    .arrow-down {
+      height: 3rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: 10px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .landing-page {
+    .container {
+      .landing-page--title {
+        font-size: 3rem;
+      }
+      .landing-page--text {
+        font-size: 1.5rem;
+      }
+    }
+    .get-more {
+      padding-top: 16rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .landing-page {
+    .container {
+      width: 70%;
+      .landing-page--title {
+        font-size: 3rem;
+      }
+      .landing-page--text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .landing-page {
+    background-image: url(../img/landing-page-phone.jpg);
+    .container {
+      width: 70%;
+      padding: 4rem 0rem 4rem 2rem;
+      .landing-page--title {
+        font-size: 3rem;
+      }
+      .landing-page--text {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .landing-page {
+    background-image: url(../img/landing-page-phone2.jpg);
+    .container {
+      width: 80%;
+      padding: 4rem 0rem 4rem 2rem;
+      .landing-page--title {
+        font-size: 2.5rem;
+      }
+      .landing-page--text {
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    }
+    .get-more {
+      padding-top: 10rem;
+    }
+  }
+}
